@@ -6,7 +6,7 @@
 
 Thanks for checking out this front-end coding challenge.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+[Screenshot mobile](.design/Screenshot 2022-11-06 at 10-07-00 Frontend Mentor Product preview card component.png)
 
 # First try.
 
