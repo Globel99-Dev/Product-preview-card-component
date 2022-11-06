@@ -16,7 +16,7 @@ This is my first try. Is static and mobile only so far.
 
 Second try. Desktop mode.
 
-![Screenshot for desktop](design/Screenshot%202022-11-06%20at%2010-07-00%20Frontend%20Mentor%20Product%20preview%20card%20component.png)
+![Screenshot for desktop](design/Screenshot 2022-11-06 at 22-57-42 Frontend Mentor Product preview card component.png)
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
