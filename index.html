@@ -26,16 +26,18 @@
       }
       .photo {
         background-image: url("images/image-product-mobile.jpg");
-        width: 375px;
-        height: 262px;
+        width: 343px;
+        height: 240px;
         border-radius: 8px 8px 0 0;
-        background-size: contain;
-        background-repeat: repeat;
+        background-size: cover;
+        /*background-repeat:no-repeat;*/
       }
       .text {
+        width: 343px;
         background-color: hsl(0, 0%, 100%);
         padding: 20px;
         border-radius: 0 0 8px 8px;
+        box-sizing: border-box;
       }
       .name,
       .prize {
@@ -86,6 +88,7 @@
     </style>
   </head>
   <body>
+    <div class="container">
     <div class="photo"></div>
     <div class="text">
       <p id="perfume">PERFUME</p>
@@ -95,22 +98,24 @@
         Perfumer-Creator for the House of CHANEL.
       </p>
       <p>
-        <span class="prize">$149.99</span>&nbsp;&nbsp;&nbsp;
+        <span class="prize">$149.99 &nbsp;</span>
+        <span></span>
         <span class="old-prize">$169.99</span>
       </p>
       <button>
         <a href="#"
           ><img src="images/icon-cart.svg" alt="Shopping cart" />&nbsp;&nbsp;Add
           to Cart</a
-        >
+        >  
       </button>
     </div>
-
+  </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Globel99 🇸🇻</a>
+        >Frontend Mentor.</a
+      >  Coded by <a href="#">Globel99</a>. 🇸🇻
+    <!-- On my linux laptop using chrome the flag emoji doesn't appear.-->
     </div>
   </body>
 </html>

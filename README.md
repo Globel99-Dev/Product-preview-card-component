@@ -12,7 +12,7 @@ Thanks for checking out this front-end coding challenge.
 
 This is my first try. Is static and mobile only so far.
 
-![Screenshot for mobile](./design/Screenshot 2022-11-06 at 10-07-00 Frontend Mentor Product preview card component.png)
+![Screenshot for mobile](design/Screenshot%202022-11-06%20at%2010-07-00%20Frontend%20Mentor%20Product%20preview%20card%20component.png)
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
