@@ -6,7 +6,7 @@
 
 Thanks for checking out this front-end coding challenge.
 
-[Screenshot mobile](.design/Screenshot 2022-11-06 at 10-07-00 Frontend Mentor Product preview card component.png)
+[Screenshot mobile](.design/Screenshot_m.png)
 
 # First try.
 
