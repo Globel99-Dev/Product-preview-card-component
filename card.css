@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+.attribution {
+  font-size: 0.688rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-size: 0;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+picture > img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+.texto {
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
+}
+.perfume {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+.new-price {
+  font-size: 3rem;
+}
+.name,
+.new-price {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+}
+.name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+}
+.perfume,
+.description,
+button {
+  font-family: "Montserrat", serif;
+}
+.perfume,
+.description,
+.old-price {
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+}
+.description {
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+button {
+  width: 100%;
+  height: 60px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+.footer {
+  padding-top: 10px;
+}
+/* media query for desktop view, begins at 640 and up*/
+@media (min-width: 640px) {
+  body {
+    width: 100vh;
+  }
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  picture > img {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+  .texto {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 0 10px 10px 0;
+  }
+  .old-price {
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: hsl(156, 42%, 18%);
+  }
+}

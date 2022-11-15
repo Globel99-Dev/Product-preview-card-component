@@ -3,61 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link
-      rel="stylesheet"
-      href="desktop.css"
-      media="all and (orientation:landscape)"
-    />
-    <link
-      rel="stylesheet"
-      href="mobile.css"
-      media="all and (orientation:portrait)"
-    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="card.css" />
     <title>Frontend Mentor | Product preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <div class="container">
-      <div class="photo"></div>
-      <div class="text">
-        <p id="perfume">PERFUME</p>
-        <span class="name">Gabrielle Essence Eau De Parfum</span>
-        <p id="description">
+      <div class="perfume-image">
+        <picture>
+          <source
+            media="(max-width: 640px)"
+            srcset="images/image-product-mobile.jpg"
+          />
+          <source
+            media="(min-width: 641px)"
+            srcset="images/image-product-desktop.jpg"
+          />
+          <img
+            src="images/image-product-mobile.jpg"
+            alt="A crystal bottle of yellow perfume sorrounded by green leafs"
+          />
+        </picture>
+      </div>
+      <div class="texto">
+        <p class="perfume">Perfume</p>
+        <h1 class="name">Gabrielle Essence Eau De Parfum</h1>
+        <p class="description">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <p>
-          <span class="prize">$149.99 &nbsp;</span>
-          <span></span>
-          <span class="old-prize">$169.99</span>
-        </p>
+        <span class="new-price">$149.99</span>
+        <span class="old-price"><del>$169.99</del></span>
         <button>
-          <a href="#"
-            ><img
-              src="images/icon-cart.svg"
-              alt="Shopping cart"
-            />&nbsp;&nbsp;Add to Cart</a
-          >
+          <img src="images/icon-cart.svg" />
+          Add to Cart
         </button>
       </div>
     </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor.</a
-      >
-      Coded by
-      <a href="https://github.com/Globel99-Dev" target="_blank">Globel99</a>. 🇸🇻
-      <!-- On my linux laptop using chrome the flag emoji doesn't appear.-->
+    <div class="footer">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Globel99</a>.🇸🇻
+      </div>
     </div>
   </body>
 </html>
