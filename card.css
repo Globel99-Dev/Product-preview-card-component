@@ -88,8 +88,7 @@ button {
     border-radius: 10px 0 0 10px;
   }
   .texto {
-    width: 600px;
-    height: 900px;
+    width: 100%;
     border-radius: 0 10px 10px 0;
   }
   .old-price {
