@@ -1,57 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="card.css" />
-    <title>Frontend Mentor | Product preview card component</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+.attribution {
+  font-size: 0.688rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    width: 100vw;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Montserrat";
+    }
+.perfume {
+    letter-spacing: .5rem;
+}
+.name, .new-price {
+    font-family: "fraunces";
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+.name {
+    color: hsl(212, 21%, 14%);
+}
+.perfume, .description, .old-price {
+    color: hsl(228, 12%, 48%);
+}
+.new-price {
+    color: hsl(158, 36%, 37%);
+}
+.description, .old-price {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+button {
+    border: none;
+    width: 100%;
+    height: 3em;
+    font-weight: bold;
+    border-radius: 0.4em;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+}
+    @media only screen and (min-width: 400px) {
+    div.photo {
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: 5%;
+    }
+    picture>img {
+        width: 20em;
+        height: 30em;
+        border-radius: 10px 0 0 10px;
+        
+    }
+    .texto {
+        width: 20em;
+        height: 30em;
+        box-sizing: border-box;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0 10px 10px 0;
+        margin-right: auto;
+        margin-left: 0;
+        margin-top: 5%;
+        padding: 1.5em;
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: hsl(158, 36%, 20%);
+    }
+}
+</style>
+</head>
+<body>
     <div class="container">
-      <div class="perfume-image">
-        <picture>
-          <source
-            media="(max-width: 640px)"
-            srcset="images/image-product-mobile.jpg"
-          />
-          <source
-            media="(min-width: 641px)"
-            srcset="images/image-product-desktop.jpg"
-          />
-          <img
-            src="images/image-product-mobile.jpg"
-            alt="A crystal bottle of yellow perfume sorrounded by green leafs"
-          />
-        </picture>
-      </div>
-      <div class="texto">
-        <p class="perfume">Perfume</p>
-        <h1 class="name">Gabrielle Essence Eau De Parfum</h1>
+        <div class="photo">
+            <picture>
+                <source media="(max-width: 399px)" srcset="images/image-product-mobile.jpg">
+                <source media="(min-width: 400px)" srcset="images/image-product-desktop.jpg">
+                <img src="images/image-product-mobile.jpg" alt="Crystal bootle with yellow parfume">
+            </picture>
+        </div>
+        <div class="texto">
+            <p class="perfume">PERFUME</p>
+        <span class="name">Gabrielle Essence Eau De Parfum</span>
         <p class="description">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <span class="new-price">$149.99</span>
-        <span class="old-price"><del>$169.99</del></span>
+        <p>
+          <span class="new-price">$149.99</span>
+          <span class="old-price"><del>$169.99</del></span>
+        </p>
         <button>
-          <img src="images/icon-cart.svg" />
-          Add to Cart
+          <img
+              src="images/icon-cart.svg"
+              alt="Shopping cart"
+            />Add to Cart
         </button>
-      </div>
+        </div>
     </div>
     <div class="footer">
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Globel99</a>.🇸🇻
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor.</a
+          >
+          Coded by
+          <a href="https://github.com/Globel99-Dev" target="_blank">Globel99</a>. 🇸🇻
+          <!-- On my linux laptop using chrome the flag emoji doesn't appear.-->
+        </div>
       </div>
-    </div>
-  </body>
+</body>
 </html>
