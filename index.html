@@ -6,20 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
-      .attribution {
-        font-size: 0.688rem;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-        text-decoration: none;
-      }
-
-      body {
-        background-color: hsl(30, 38%, 92%);
-        width: 100vw;
-      }
+      /*
       .container {
         display: flex;
         flex-wrap: wrap;
@@ -114,6 +101,96 @@
           cursor: pointer;
           background-color: hsl(158, 36%, 20%);
         }
+      } */
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+      .attribution {
+        font-size: 0.688rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+      }
+      body {
+        background-color: hsl(30, 38%, 92%);
+        font-size: 0;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      picture > img {
+        border-radius: 10px 10px 0 0;
+        width: 320px;
+      }
+      .texto {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0 0 10px 10px;
+        box-sizing: border-box;
+        width: 320px;
+        padding: 20px;
+      }
+      .perfume,
+      .description,
+      .old-price {
+        font-family: "Montserrat", sans-serif;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.875rem;
+      }
+      .perfume {
+        letter-spacing: 0.2rem;
+      }
+      .description {
+        line-height: 1.5rem;
+      }
+      .name {
+        font-family: "Fraunces", serif;
+        color: hsl(212, 21%, 14%);
+        font-size: 2rem;
+      }
+      .new-price {
+        font-family: "Fraunces", serif;
+        color: hsl(158, 36%, 37%);
+        font-size: 2rem;
+        line-height: 4rem;
+      }
+      button {
+        border: none;
+        border-radius: 8px;
+        background-color: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+        width: 100%;
+        height: 50px;
+        font-weight: bold;
+      }
+
+      @media screen and (min-width: 656px) {
+        picture > img {
+          border-radius: 10px 0 0 10px;
+          width: 450px;
+        }
+        .texto {
+          border-radius: 0 10px 10px 0;
+          padding: 30px;
+          width: 450px;
+        }
+        .perfume,
+        .description,
+        .old-price {
+          font-size: 1.5rem;
+        }
+        .description {
+          line-height: 2rem;
+        }
+        .name {
+          font-size: 3.4rem;
+          line-height: 3rem;
+        }
+        button:hover {
+          cursor: pointer;
+          background-color: hsl(158, 36%, 20%);
+        }
       }
     </style>
   </head>
@@ -122,11 +199,11 @@
       <div class="photo">
         <picture>
           <source
-            media="(max-width: 640px)"
+            media="(max-width: 655px)"
             srcset="images/image-product-mobile.jpg"
           />
           <source
-            media="(min-width: 641px)"
+            media="(min-width: 656px)"
             srcset="images/image-product-desktop.jpg"
           />
           <img
