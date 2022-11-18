@@ -119,12 +119,15 @@
       }
       body {
         background-color: hsl(30, 38%, 92%);
+        /*display: flex;*/
         font-size: 0;
       }
       .container {
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
+        min-height: 100vh;
+        flex-flow: column;
       }
       picture > img {
         border-radius: 10px 10px 0 0;
@@ -170,8 +173,11 @@
         height: 50px;
         font-weight: bold;
       }
-
+      
       @media screen and (min-width: 656px) {
+        .container {
+          flex-flow: row;
+        }
         picture > img {
           border-radius: 10px 0 0 10px;
           width: 350px;
