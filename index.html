@@ -125,7 +125,7 @@
       .container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         min-height: 100vh;
         flex-flow: column;
       }
@@ -177,6 +177,7 @@
       @media screen and (min-width: 656px) {
         .container {
           flex-flow: row;
+          justify-content: center;
         }
         picture > img {
           border-radius: 10px 0 0 10px;
